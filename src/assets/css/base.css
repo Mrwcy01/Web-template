@@ -1,0 +1,129 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, address, big,
+em, img,
+small, strong,
+dl, dt, dd, ol, ul, li,
+form, label,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+footer, header,
+menu, nav, output, section,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html, body, div,
+h1, h2, h3, h4, h5, h6, p,
+dl, dt, dd, ol, ul, li,
+table, tbody, tfoot, thead, tr, th, td,
+footer, header, section {
+  box-sizing: border-box;
+  line-height: 1;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,img {
+  border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+  font-weight: normal;
+  font-style: normal;
+}
+ol,ul {
+  list-style: none;
+}
+input,button{
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #70756f;
+}
+caption,th {
+  text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+q:before,q:after {
+  content:"";
+}
+abbr,acronym { border: 0;}
+
+
+/* 后来添加的 */
+
+  /**
+  * Prevent modern browsers from displaying `audio` without controls.
+  * Remove excess height in iOS 5 devices.
+  *
+  * 阻止现在浏览器显示未定义 control 播放控件的 'audio' 声音元素。
+  * 删除 IOS 5 设备中显示的多余的高度。
+  */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+html {
+  max-width: 750Px;
+  background-color: #F9F9F9;
+  overflow-x: scroll;
+  font-family: "microsoft yahei", "simhei", sans-serif;
+  margin: 0 auto;
+}
+body {
+  background-color: #F9F9F9;
+}
+
+/* 根据效果图进行主动修改的初始化样式 */
+
+
+
+
+
+/* 公司内部清楚浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 浮动 */
+.left{
+  float: left; 
+}
+.right{
+  float: right;
+}
+
+/* 单行限长 超出部分隐藏 ... */
+.single-row-hide{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+/* 两行限长 超出部分隐藏 ...*/
+.two-row-hide{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
